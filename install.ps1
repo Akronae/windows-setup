@@ -3,4 +3,4 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 choco install git nvm nano googlechrome firefox vscode notepad2 cygwin
 choco install coreutils --source=cygwin
 
-$Env:PATH += ";C:\tools\cygwin\bin;"
+[Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\tools\cygwin\bin;", "Machine")
