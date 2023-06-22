@@ -2,7 +2,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 
 choco feature enable -n allowGlobalConfirmation
 
-choco install git nvm nano curl googlechrome firefox brave vscode notepad2 cygwin qbittorrent powertoys veracrypt rustup.install
+choco install git nvm nano curl googlechrome firefox brave vscode notepad2 cygwin qbittorrent powertoys veracrypt slack
 choco install coreutils zsh --source=cygwin
 
 remove-item alias:curl
