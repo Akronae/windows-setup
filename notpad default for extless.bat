@@ -16,4 +16,7 @@ assoc .sass=txtfile
 assoc .conf=txtfile
 assoc .local=txtfile
 assoc .development=txtfile
+
+ftype "txtfile"="c:\windows\system32\notepad.exe" "%1"
+
 pause
