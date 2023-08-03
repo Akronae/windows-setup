@@ -10,3 +10,6 @@ remove-item alias:nano
 
 [Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\tools\cygwin\bin;", "Machine")
 [Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\Program Files\Git\bin;", "Machine")
+
+New-Item $profile -force -itemtype file
+"remove-item alias:sleep -Force" | Out-File $profile
