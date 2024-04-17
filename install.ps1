@@ -5,11 +5,8 @@ choco feature enable -n allowGlobalConfirmation
 choco install -y googlechrome firefox brave vscode notepad2 cygwin qbittorrent powertoys slack sharex mongodb-compass microsoft-windows-terminal parsec vlc bulk-crap-uninstaller 7zip 
 choco install coreutils zsh --source=cygwin
 
-remove-item alias:curl
-remove-item alias:nano
-
 [Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\tools\cygwin\bin;", "Machine")
 [Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\Program Files\Git\bin;", "Machine")
 
-New-Item $profile -force -itemtype file
-"remove-item alias:sleep -Force" | Out-File $profile
+remove-item alias:curl
+remove-item alias:nano
