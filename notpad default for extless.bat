@@ -17,6 +17,6 @@ assoc .conf="Text Document"
 assoc .local="Text Document"
 assoc .development="Text Document"
 
-ftype "Text Document"="c:\windows\system32\notepad.exe" "%1"
+ftype "Text Document"="c:\windows\system32\notepad.exe" "%%1"
 
 pause
