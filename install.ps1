@@ -10,3 +10,4 @@ choco install coreutils zsh --source=cygwin
 
 remove-item alias:curl
 remove-item alias:nano
+remove-item alias:rm
